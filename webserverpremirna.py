@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 icon = Image.open('fav.png')
-st.set_page_config(page_title='MiRNA', page_icon = icon)
+st.set_page_config(page_title='Pre MiRNA', page_icon = icon)
 # with open("./scaler.pkl", 'rb') as file:
 #     scaler = pickle.load(file)
 
@@ -35,7 +35,7 @@ def seqValidator(seq):
 
 final_df = pd.DataFrame(columns=['Sequence ID', 'Sequence', 'Label'])
 seq = ""
-st.header("""MiRNA Webserver""")
+st.header("""Pre MiRNA Webserver""")
 
 file_ = open("./WebPic.gif", "rb")
 contents = file_.read()
